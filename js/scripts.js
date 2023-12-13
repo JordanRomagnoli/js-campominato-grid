@@ -2,6 +2,7 @@ const buttonStart = document.querySelector('button');
 
 let gameSwitch = false;
 buttonStart.addEventListener('click', function(){
+    let selectDifficult = parseInt(document.querySelector('select').value);
     gameSwitch = true;
 
     if (gameSwitch == true){ 
@@ -9,17 +10,15 @@ buttonStart.addEventListener('click', function(){
     }
 
 
-    let cell;
+    for(let i = 1; i <= selectDifficult; i++){
 
-    for(let i = 0; i < 100; i++){
-
-        cell = document.createElement('div');
-        cell.innerHTML = (randomNumber(1, 100));
+        let cell = document.createElement('div');
+        cell.innerHTML = i;
         document.querySelector('.grill').append(cell);
 
         cell.addEventListener('click', function(){
             this.classList.toggle('active');
-            
+
             console.log(this.innerHTML);
         }
         );

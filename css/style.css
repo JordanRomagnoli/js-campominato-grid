@@ -23,9 +23,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 } 
 
 
 .active {
-    background-color: red;
+    background-color: rgb(68, 112, 97);
 }
