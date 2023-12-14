@@ -16,10 +16,19 @@ buttonStart.addEventListener('click', function(){
         cell.innerHTML = i;
         document.querySelector('.grill').append(cell);
 
+        if(selectDifficult == 100){
+            cell.classList.add('difficult1')
+        }else if (selectDifficult == 81){
+            cell.classList.add('difficult2')
+        }else if (selectDifficult == 49){
+            cell.classList.add('difficult3')
+        };
+
         cell.addEventListener('click', function(){
             this.classList.toggle('active');
 
             console.log(this.innerHTML);
+
         }
         );
 

@@ -18,7 +18,6 @@ header {
 
 .grill > *{
     height: 100px;
-    width: 10%;
     border: 2px solid darkblue;
     display: flex;
     justify-content: center;
@@ -29,4 +28,16 @@ header {
 
 .active {
     background-color: rgb(68, 112, 97);
+}
+
+.difficult1{
+    width: 10%;
+}
+
+.difficult2{
+    width: calc(100% / 9);
+}
+
+.difficult3{
+    width: calc(100% / 7);
 }
